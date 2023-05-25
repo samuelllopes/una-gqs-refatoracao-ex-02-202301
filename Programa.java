@@ -17,22 +17,30 @@ public class Programa {
                 mensalidade = 60.0;
             } else if (idade <= 18) {
                 mensalidade = 75.0;
-            } else if (idade <= 25) {
-                mensalidade = 90.0;
-            } else if (idade <= 40) {
-                mensalidade = 85.0;
-            } else {
-                mensalidade = 800.0;
-            }
-        } else if (sexo.equalsIgnoreCase("F")) {
-            if (idade <= 15 || idade <= 18) {
-                mensalidade = 60.0;
             } else if (idade <= 30) {
                 mensalidade = 90.0;
             } else if (idade <= 40) {
                 mensalidade = 85.0;
-            } else {
+            } else if (idade <= 41) {
                 mensalidade = 80.0;
+            } else if (idade <= 50) {
+                mensalidade = 80.0;
+            } else {
+                mensalidade = 60.0;
+            }
+        } else if (sexo.equalsIgnoreCase("F")) {
+        	if (idade <= 18) {
+                mensalidade = 60.0;
+            } else if (idade <= 19) {
+                mensalidade = 90.0;
+            } else if (idade <= 26) {
+                mensalidade = 85.0;
+            } else if (idade <= 41) {
+                mensalidade = 65.0;
+            } else if (idade <= 50) {
+                mensalidade = 65.0;
+            } else {
+                mensalidade = 50.0;
             }
         } else {
             System.out.println("Sexo inválido.");
